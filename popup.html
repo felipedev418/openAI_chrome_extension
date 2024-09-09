@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI API Extension</title>
+  <link rel="stylesheet" type="text/css" href="./styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>OpenAI API Extension</h1>
+    <form id="config-form">
+      <label for="apiKey">API Key:</label>
+      <input type="password" id="apiKey" required>
+
+      <label for="url">URL:</label>
+      <input type="text" id="url" required>
+
+      <label for="path">Path:</label>
+      <input type="text" id="path" required>
+
+      <label for="prompt">Prompt:</label>
+      <textarea id="prompt" required></textarea>
+
+      <label for="model">Model:</label>
+      <input type="text" id="model" required>
+
+      <button type="submit">Save Configuration</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
